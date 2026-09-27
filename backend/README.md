@@ -1,6 +1,6 @@
-# Registech - Backend 🚀
+# Coomsocialips - Backend 🚀
 
-Este es el backend del sistema **Registech**, diseñado como proyecto de grado para el Análisis y Desarrollo de Software. Ha evolucionado desde un servidor básico hasta una arquitectura robusta, escalable y lista para producción.
+Este es el backend del sistema **Coomsocial Ips**, diseñado como Mejora para el Análisis y Desarrollo de Software. Ha evolucionado desde un servidor básico hasta una arquitectura robusta, escalable y lista para producción.
 
 ## 🛠️ Tecnologías y Stack
 - **Framework:** Node.js con **Express 5.2.1** (aprovechando el manejo nativo de promesas y errores asíncronos).

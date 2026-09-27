@@ -1,25 +1,48 @@
 version: '3.8'
 
 services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: coomsocial_db
+    environment:
+      POSTGRES_USER: coomsocial_user
+      POSTGRES_PASSWORD: coomsocial_password_seguro
+      POSTGRES_DB: coomsocial_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
   backend:
     build: ./backend
-    container_name: backend-1
+    container_name: coomsocial_backend
     ports:
-      - "3000:3000"
+      - "5000:5000"
     volumes:
       - ./backend:/app
       - /app/node_modules
-    command: sh -c "npm install && npx prisma generate && npm run dev"
+    command: sh -c "npm install && npx prisma generate --schema=./prisma/schema.prisma && npm run dev"
     env_file:
       - ./backend/.env
+    depends_on:
+      - postgres
     restart: always
 
   frontend:
     build: ./frontend
-    container_name: frontend-1
+    container_name: coomsocial_frontend
     ports:
       - "5173:5173"
+    environment:
+      - VITE_API_URL=http://192.168.1.6:5000/api
     volumes:
       - ./frontend:/app
       - /app/node_modules
+    depends_on:
+      - backend
     restart: always
+
+volumes:
+  postgres_data:
+

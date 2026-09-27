@@ -261,8 +261,11 @@ const Login = () => {
 
                     <div className="text-center mb-4">
                         <h2 className="auth-title mb-1">
-                            Regis<span className="text-primary">Tech</span>
+                            Coomsocial <span className="text-primary">IPS</span>
                         </h2>
+                        <p className="auth-subtitle fw-semibold text-muted mb-1" style={{fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.5px'}}>
+                            Gestión tecnología e IT
+                        </p>
                         <p className="auth-subtitle fw-semibold mb-1">
                             Bienvenido de nuevo
                         </p>

@@ -96,7 +96,7 @@ export default function Sidebar({
         >
             <div className="sidebar__brand">
                 <span className="sidebar__brand-text">
-                    Regis<span className="text-accent">Tech</span>
+                    Coomsocial <span className="text-accent">IPS</span></span><span style={{display: 'block', fontSize: '0.65rem', color: '#64748b', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px', marginTop: '2px', paddingLeft: '1.2rem'}}>Gestión tecnología e IT
                 </span>
 
                 <span className="sidebar__brand-text sidebar__brand-text--center">

@@ -66,7 +66,7 @@ axios.interceptors.response.use(
 
 let BASE_URL = import.meta.env.VITE_API_URL || '/api';
 if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-    BASE_URL = 'https://registech-proyecto-de-grado.onrender.com/api';
+    BASE_URL = import.meta.env.VITE_API_URL || 'http://192.168.1.6:5000/api';
 }
 
 export const API_ROUTES = {

@@ -13,7 +13,8 @@ export default function ModalRegistroEquipo({ areas, onClose, onRegistrado }) {
         sistema_operativo: '',
         num_serie: '',
         fecha_adquisicion: toISODate(new Date()),
-        estado: 'Disponible'
+        estado: 'Disponible',
+    sede: 'Bello'
     })
 
     const [foto, setFoto] = useState(null)
@@ -208,7 +209,23 @@ export default function ModalRegistroEquipo({ areas, onClose, onRegistrado }) {
 
                             </div>
 
-                            {/* ESPECIFICACIONES */}
+                                {/* SEDE */}
+    <div className="mb-2">
+        <label className="form-label fw-semibold mb-1">
+            Sede <span className="text-danger">*</span>
+        </label>
+        <select
+            className="form-select"
+            value={nuevoEquipo.sede || 'Bello'}
+            onChange={(e) => handleChange('sede', e.target.value)}
+            disabled={guardando}
+        >
+            <option value="Bello">Bello</option>
+            <option value="Estadio">Estadio</option>
+        </select>
+    </div>
+
+    {/* ESPECIFICACIONES */}
 
                             <div className="mb-2">
 

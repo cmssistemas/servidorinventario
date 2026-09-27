@@ -9,8 +9,8 @@ exports.login = async (req, res) => {
 
         res.cookie('token', token, {
             httpOnly: true,
-            secure: true,
-            sameSite: 'none',
+            secure: false,
+            sameSite: 'lax',
             path: '/',
             maxAge: 15 * 60 * 1000
         })
@@ -20,8 +20,8 @@ exports.login = async (req, res) => {
 
         res.cookie('session_id', sessionId, {
             httpOnly: true,
-            secure: true,
-            sameSite: 'none',
+            secure: false,
+            sameSite: 'lax',
             path: '/',
             maxAge: 60 * 60 * 1000
         })
@@ -62,15 +62,15 @@ exports.logout = (req, res) => {
     res.clearCookie('token', {
         path: '/',
         httpOnly: true,
-        secure: true,
-        sameSite: 'none'
+        secure: false,
+        sameSite: 'lax'
     })
 
     res.clearCookie('session_id', {
         path: '/',
         httpOnly: true,
-        secure: true,
-        sameSite: 'none'
+        secure: false,
+        sameSite: 'lax'
     })
 
     return res.status(200).json({ mensaje: 'Sesión cerrada' })

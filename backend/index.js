@@ -29,7 +29,7 @@ app.use(helmet({
 // PERMITIR PETICIONES DE OTROS DOMINIOS
 // ANTES DE RATE LIMITERS PARA QUE 429 TENGA CORS
 app.use(cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: ['http://localhost:5173', 'http://192.168.1.6:5173'],
     credentials: true
 }))
 

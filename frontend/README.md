@@ -1,6 +1,6 @@
-# Frontend — Registech
+# Frontend —Coomsocial IPS
 
-Interfaz web del sistema **Registech**: gestión de inventario de equipos, préstamos, mantenimiento, inventario de menor cuantía (PMC), reportes y configuración.
+Interfaz web del sistema **Coomsocial ips**: gestión de inventario de equipos, préstamos, mantenimiento, inventario de menor cuantía (PMC), reportes y configuración.
 
 ## Stack
 

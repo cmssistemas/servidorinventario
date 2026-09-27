@@ -1,8 +1,6 @@
-# Registech - Proyecto de Grado
+# COOMSOCIAL IPS - PROYECTO iNVENTARIO TECNOLOGICO
 
-**Proyecto de Grado: Análisis y Desarrollo de Software**
-
-Sistema web para el inventario y la gestión de equipos de TI de la empresa Registech. El sistema permite administrar usuarios, áreas, equipos tecnológicos, préstamos y reportes de fallas a través de un panel de control basado en roles.
+Sistema web para el inventario y la gestión de equipos de TI de la empresa COOMSOCIALIPS. El sistema permite administrar usuarios, áreas, equipos tecnológicos, préstamos y reportes de fallas a través de un panel de control basado en roles.
 
 Actualmente el proyecto cuenta con la base funcional para integrar en el futuro módulos adicionales como Ventas, Almacén y Finanzas.
 
@@ -135,10 +133,6 @@ La aplicación web correrá en http://localhost:5173.
 ---
 
 ## Autores
-
-- Aly Santiago Cano
-- Narilyn Bustamante
 - Cesar Augusto Cardona Arango
-- Jhonatan David Gutierrez Gutierrez
 
 Mockups del sistema: [Enlace a los prototipos](https://stitch.withgoogle.com/projects/15267342535273535427)
